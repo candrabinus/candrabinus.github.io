@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biodata Mahasiswa</title>
+        <style>
+            body {
+                color: #777;
+                background-color: #1982c4;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .content {
+                position: relative;
+                height: 100vh;
+            }
+            .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+            }
+
+            .center a{
+                color: #fff;
+            }
+
+            .blue {
+                background-color: #1982c4;
+            }
+
+            .red {
+                background-color: #ff595e;
+            }
+
+            .yellow {
+                background-color: #ffbe0b;
+            }
+
+            .button-frame {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .button-frame button {
+                margin-left: 10px;
+                border: none;
+                border-radius: 3px;
+                padding: 8px 20px;
+                cursor: pointer;
+                color: white;
+                font-weight: bold;
+                text-shadow: 1px 0px 2px #999;
+            }
+
+            .button-blue {
+                background-color: blue;
+            }
+
+            .button-red {
+                background-color: red;
+            }
+
+            .button-yellow {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body class="yellow">
+        <div class="content">
+            <div class="center">
+                <h1>Biodata Diri </h1>
+                <img src="foto.png" alt="Foto" width="300"></a>
+                <ul >
+                    <li><b>Nama Lengkap</b> : Candra Dwi Prasetyo</li>
+                    <li><b>Alamat</b> : Bogor, Jawa Barat</li>
+                    <li><b>NIM</b> : 2502049864</li>
+                    <li><b>Universitas</b> : Binus Online Learning</li>
+                    <li><b>Jurusan</b> : PJJ Computer Science </li>  
+                    <li><b>Email</b> : <a href =mailto:candra.prasetyo@binus.ac.id>candra.prasetyo@binus.ac.id</a></li>       
+                </ul>
+                <div class="button-frame">
+                    <button class="button-red" onclick="changeColor('red')">Merah</button>
+                    <button class="button-blue" onclick="changeColor('blue')">Biru</button>
+                    <button class="button-yellow" onclick="changeColor('yellow')">Kuning</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function changeColor(color) {
+        switch(color) {
+            case "red": document.body.className = 'red'; break;
+            case "blue": document.body.className = 'blue'; break;
+            case "yellow": document.body.className = 'yellow'; break;
+        }
+    }
+</script>
